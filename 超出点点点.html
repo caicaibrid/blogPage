@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 300px;
+            border: 10px solid red;
+            line-height: 1.5;
+        }
+        .Single{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .multi-line{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp:2;//第二行超出去显示省略号
+            text-overflow: ellipsis;
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+<body>
+    <!--单行省略号-->
+    <div class="Single">
+        当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记
+        当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记
+        当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记
+    </div>
+    <!--多行省略号-->
+    <div class="multi-line">
+        当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记
+        当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记
+        当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记当对象内文本溢出时显示省略标记
+    </div>
+</body>
+</html>
